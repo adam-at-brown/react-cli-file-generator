@@ -16,7 +16,7 @@
 
 ### Usage
 
-Run `yarn make MyComponentName` in your projects directory. It will then add the following to your `scr/components` directory
+Run `yarn make MyComponentName` in your projects directory. It will then add the following to your `src/components` directory
 
 ```
 MyComponentName
@@ -27,3 +27,5 @@ MyComponentName
   ```
 
   and add the appropriate `import` and export to the `index.ts` file on `src`
+  
+  *it does work in this project as well if you wish to test it out
