@@ -1,0 +1,13 @@
+{
+  "name": "comp-gen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^17.0.1",
+    "styled-components": "^5.2.0"
+  },
+  "scripts": {
+    "make": "node ./gen-templates $1"
+  }
+}
