@@ -36,7 +36,12 @@ import { render } from '@testing-library/react';
 import ${name} from './${name}';
 
 describe('${name} Component', () => {
-  test('it should match the snapshot', () => {
+  it("${name} passes a11y tests", async () => {
+    const { container } = render(<${name} />);
+    expect(await axe(container)).toHaveNoViolations();
+  });
+
+  it('it should match the snapshot', () => {
     const { asFragment } = render(<${name} />);
     expect(asFragment()).toMatchSnapshot();
   });
